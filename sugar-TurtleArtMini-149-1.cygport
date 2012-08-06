@@ -1,0 +1,9 @@
+SUGAR_TYPE="Honey"
+inherit sugar
+
+
+CYGPORT_USE_UNSTABLE_API=1
+src_unpack_hook() {
+	# requires v4l2src
+	rm -fr plugins/camera_sensor/
+}
